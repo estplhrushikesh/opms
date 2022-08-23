@@ -1,12 +1,7 @@
 <?php 
     $CI =& get_instance();
-    // error_reporting(E_ALL);
-    // ini_set('display_errors', 1);
-    //echo "<pre>"; print_r($project_deatail); die;
-
 
 ?>
-
 
 <?php
   $start    = new DateTime($physical_activity_details[0]['startdate']);
