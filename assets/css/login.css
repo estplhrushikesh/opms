@@ -1,0 +1,36 @@
+.background {
+            background: linear-gradient(279.18deg, #45a4ec 9.61%, #216bab 75.6%);
+        }
+
+        /*.logo {
+            display: inline-block;
+            width: 120px;
+            margin: 20px;
+        }*/
+
+        /* image-purpose */
+
+        .ocac-image{
+            height: 46px !important;
+            width: 100% !important;
+        }
+        .ocac-form{
+            border-radius: 20px;
+        }
+
+        @media(max-width:768px) {
+           /* .logo {
+                margin: 10px 25px;
+            }*/
+
+            .right-side {
+                position: relative !important;
+                top: 0px !important;
+            }
+
+            .oki {
+                display: flex;
+                margin: 5px;
+            }
+
+        }
