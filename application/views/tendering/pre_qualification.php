@@ -224,7 +224,7 @@
 
                                 <?php  if(!empty($Pre_Qualification_data)) { ?>
                                 <div class="col-md-12 align-center">
-                                    <a href="<?php echo base_url();?>published_tender/pp_technical_evalution" class="btn btn-warning waves-effect">CANCEL</a>
+                                    <a href="<?php echo base_url();?>published_tender/pp_pre_qualification" class="btn btn-warning waves-effect">CANCEL</a>
                                      <button class="btn btn-primary waves-effect " name="submit" id="submit_btn" value="Submit" onclick="checkSubmitStatus(event );"   type="submit">Update</button>
                                     
                                 </div>

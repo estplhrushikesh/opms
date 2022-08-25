@@ -89,12 +89,13 @@ $narr_id =array_unique($monthsidArr);
                                                 <td>Deliverable<span style="color: red;"></span>: </td>
                                                 <td>
                                                     
-                                                        <?php
+                                                         <?php
+                                                        $activity=base64_decode($_REQUEST['activity_id']);
                                                         //$project_activity= $CI->get_activity_stage($physical_activity_details['project_activity_id']);
-                                                       echo $project_activity[0]['particulars'];
+                                                       if($activity==0){echo "All"; }
+                                                       else{ 
+                                                       echo $project_activity[0]['particulars'];}
                                                         ?>
-                                                    
-                                                
                                                 </td>
                                             </tr>
                                             <tr>

@@ -59,8 +59,6 @@ class Project_list extends MY_Controller
           $this->load->common_template('project/pip_preparation_list_view', $data);
     }
 
-
-
     function pp_pretender(){
           $user_id = $this->session->userdata('id');
           $user_type = $this->session->userdata('user_type');
@@ -72,7 +70,6 @@ class Project_list extends MY_Controller
             redirect('Home');
         }
         
-
           $data['user_id'] = $user_id;
 
           $data['project_pending_data'] = $this->Project_list_model->get_pp_pre_tender_pending_projects_list_data($user_id);
@@ -97,12 +94,10 @@ class Project_list extends MY_Controller
           $this->load->common_template('project/pp_tender_list_view', $data);
     }
 
-
     function pp_agreement(){
           $user_id = $this->session->userdata('id');
           $user_type = $this->session->userdata('user_type');
        
-
           $data['user_id'] = $user_id;
 
           $data['project_pending_data'] = $this->Project_list_model->get_pp_agreement_pending_projects_list_data($user_id);
@@ -112,10 +107,8 @@ class Project_list extends MY_Controller
           $this->load->common_template('project/pp_agreement_list_view', $data);
     }
 
-
     /* end for listing Page */
-    
-    
+
     function pip_dpr(){
           $user_id = $this->session->userdata('id');
           $user_type = $this->session->userdata('user_type');
