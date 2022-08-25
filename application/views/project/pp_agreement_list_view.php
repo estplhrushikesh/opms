@@ -40,7 +40,7 @@
                                             <th>Sl No</th>
                                             <th>Project Name</th>
                                             <th>Category </th>
-                                            <th>Location</th>
+                                            <!-- <th>Location</th> -->
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -76,7 +76,7 @@
                                             </span>
                                             </a></td>
                                             <td><?php echo $key->project_type; ?></td>
-                                            <td><?php echo $key->area_name; ?></td>
+                                            <!-- <td><?php echo $key->area_name; ?></td> -->
                                             <td><?php echo $st; ?></td>
                                             <td>
                                                 <?php 

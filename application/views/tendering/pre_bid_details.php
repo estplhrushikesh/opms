@@ -129,7 +129,7 @@
                                      <table class="table">
                                         <tr>
                                         <th><b>File name</b></th>
-                                        <th> <b>Corrigendum / Addendum Issuance Date</b></th>
+                                        <th> <b>Preparation of Corrigendum and Publish </b></th>
                                         </tr>
                                         <?php
                                      if(!empty($prebid_file)){
@@ -559,7 +559,7 @@ var bidderstdcount = $(".mobile-valid").length;
             var $input = $(input);
 
             if ($(input).val() == '') {
-                $(input).after("<span class='error' style='color:#ff0000'>Please Enter Corrigendum / Addendum Issuance Date.</span>");
+                $(input).after("<span class='error' style='color:#ff0000'>Please Enter Preparation of Corrigendum and Publish .</span>");
                 event.preventDefault();
             }
         });

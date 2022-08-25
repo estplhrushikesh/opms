@@ -1,7 +1,12 @@
 <?php 
     $CI =& get_instance();
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', 1);
+    //echo "<pre>"; print_r($project_deatail); die;
+
 
 ?>
+
 
 <?php
   $start    = new DateTime($physical_activity_details[0]['startdate']);
@@ -81,11 +86,12 @@ $narr_id =array_unique($monthsidArr);
                                                 <td>Deliverable<span style="color: red;"></span>: </td>
                                                 <td>
                                                     
-                                                <?php
+                                              <?php
                                                         $activity=base64_decode($_REQUEST['activity_id']);
                                                         //$project_activity= $CI->get_activity_stage($physical_activity_details['project_activity_id']);
-                                                       if($activity==0){echo "All"; }else{ 
-                                                        $project_activity[0]['particulars'];}
+                                                       if($activity==0){echo "All"; }
+                                                       else{ 
+                                                       echo $project_activity[0]['particulars'];}
                                                         ?>
                                                     
                                                 
@@ -281,7 +287,7 @@ $paid_v=0;
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-line">
-                                            <input type="number" id="total_invoice_amount"  name="invoice_value" class="form-control" placeholder="Claimed Amount">
+                                            <input type="text" id="total_invoice_amount"  name="invoice_value" class="form-control txtQty" placeholder="Claimed Amount">
                                         </div>
                                     </div>
                                     <div class="col-md-2">
@@ -525,9 +531,12 @@ function validateFloatKeyPress(el, evt) {
                } 
             });
 
+$(".txtQty").keyup(function() {
+        var $this = $(this);
+        $this.val($this.val().replace(/[^\d.]/g, ''));        
+    });
 
-
-                function check_total(){
+    function check_total(){
             var releasedTotalAmount = 0.00;
             var activityBudgetAmount = $("#activityBudgetAmount").val();
             $('#activity_details').find('.amount_key').each(function(index, element) {
